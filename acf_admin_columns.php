@@ -504,7 +504,7 @@ class FleiACFAdminColumns
         if (!empty($all_column_styles)) {
             echo '<style>';
             foreach ($all_column_styles as $column => $column_styles) {
-                echo esc_attr('.column-' . sanitize_html_class($column) . '{' . $column_styles . '};');
+                echo esc_attr('.column-' . sanitize_html_class($column) . '{' . $column_styles . '}');
             }
             echo '</style>';
         }
